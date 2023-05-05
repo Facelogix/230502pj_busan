@@ -1,0 +1,154 @@
+header {
+    background: #f4f4f4;
+    position: relative;
+    height: 160px;
+    .h_container {
+        width: 1200px; height: 100%; margin: 0 auto; 
+        display: flex; justify-content: space-between;
+        align-items: center;
+        h1 {width: 20%; 
+            img{width: 70%;}}
+        .user_menu {
+            width: 40%; text-align: center;
+            display: flex; justify-content: space-between;
+            a {
+                width: 30%; font-size: 1.5rem; padding: 20px 0;
+            }
+        }
+        .h_right {/* background-color: aquamarine; */
+            width: 20%; text-align: center; 
+            .right_util {width: 100%;
+                display: flex; /* margin-bottom: 30px; */ 
+                > div > h2 {}
+                .login {width: 33%;
+                    position: relative;
+                    
+                    h2 {}
+                    p {position: absolute; 
+                    display:none; /* inline-block; */
+                    top: 0; left: -30px; 
+                    }
+                    .login_personal {display: none;}
+                    .login_corperate {display: none;}
+                }
+                .customer {width: 33%;
+                    
+                    .personal {display: none;}
+                    .corperate {display: none;}
+                }
+                .lang {width: 33%;
+                    
+                    a {display: none;}
+                }
+            }
+            .gnb {display: flex; justify-content: space-between;
+                align-items: center;
+                p {width: 50%; padding: 30px;}
+                .menu_icon {width: 50%; 
+                    img {}
+                }
+            }
+        }
+    }
+    .bot {position: fixed; right: 200px; top: 50px;}
+}/* e:header */
+main {
+    .bnr_wrap {
+        .bnr_container {
+            width: 1200px; margin: 0 auto;
+            .bnr_slide {display: none;}
+            .slide01 {
+                position: relative;
+                background: url(../images/bnr001.jpg) no-repeat center;
+                background-size: cover;
+                width: 100%; height:580px; display: block;
+                h1 {position: absolute; top: 50%; left: 50%;
+                    font-size: 2rem; color:#f4f4f4;
+                    transform: translate(-50%,-50%);
+                }
+            }
+            .slide02 {}
+            .slide03 {}
+            .slide04 {}
+            .slide05 {}
+            .quick_menu {
+                
+                .quick_bar {width: 66%; height: 80px; margin: 0 auto;
+                    border: 1px solid #28282b; border-radius: 50px;
+                    overflow: hidden;
+                    .first_page {width: 100%; height: 100%; 
+                        display: flex; text-align: center;
+                        align-items: center;
+                        a {background-color: bisque;
+                        width: 20%; 
+                        display: inline-block;
+                        }
+                        #trans {background-color: brown;
+                            width: 20%;display: inline-block;
+                        }
+
+                        
+                    }
+                    .active_page {display: none;}
+                }
+            }
+        }
+    }
+    .product_wrap {
+        background-color: #b2b2b2;
+        .product_container {
+            width: 1200px; margin: 0 auto;
+            .content {
+                
+                display: flex; justify-content: space-between;
+                align-items: center; 
+                li {
+                    width: 16%; text-align: center;
+                    .icon {
+                        img {}
+                    }
+                    h2 {}
+                    .text {}
+                }
+                .cont01 {}
+                .cont02 {}
+                .cont03 {}
+                .cont04 {}
+                .cont05 {}
+            }
+        }
+        
+    }
+    .event_wrap {background-color: cornflowerblue;}
+    .service_wrap {background-color:darkkhaki;}
+}/* e:main */
+footer {
+    background: #28282b;
+    .f_container {
+        width: 1200px; margin: 0 auto; padding: 30px 0;
+        display: flex; justify-content: space-between;
+        align-items: center;
+        .f_left {flex-flow: column;
+            .fnb {
+                a {}
+            }
+            .copyright {
+                p {
+                
+                }
+                p > img:first-child {display: none;}
+                p > img:last-child {width: 50px;}
+            }
+            .link {
+                a {}
+            }
+        }
+        .f_right {text-align: right;
+            #f_logo {text-align: left;
+                img {}
+            }
+            h2 {}
+            .num {}
+        }
+    }
+}
