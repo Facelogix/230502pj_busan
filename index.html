@@ -25,8 +25,10 @@
                 <div class="right_util">
                     <div class="login">
                         <h2>로그인</h2>
-                        <a href="#" class="login_personal">개인뱅킹</a>
-                        <a href="#" class="login_corperate">기업뱅킹</a>
+                        <p>
+                            <a href="#" class="login_personal">개인뱅킹</a>
+                            <a href="#" class="login_corperate">기업뱅킹</a>
+                        </p>
                     </div>
                     <div class="customer">
                         <h2>인증센터</h2>
@@ -34,14 +36,15 @@
                             <a href="#" class="personal">개인뱅킹</a>
                             <a href="#" class="corperate">기업뱅킹</a>
                         </p>
-                        
                     </div>
                     <div class="lang">
-                        <h2>global</h2>
-                        <a href="#">한국어</a>
-                        <a href="#">English</a>
-                        <a href="#">日本語</a>
-                        <a href="#">中國語</a>
+                        <h2>Global</h2>
+                        <div class="select_lang">
+                            <a href="#"><img src="./images/icon/btn_lang00.gif" alt=""><span>한국어</span></a>
+                            <a href="#"><img src="./images/icon/btn_lang01.gif" alt=""><span>English</span></a>
+                            <a href="#"><img src="./images/icon/btn_lang02.gif" alt=""><span>日本語</span></a>
+                            <a href="#"><img src="./images/icon/btn_lang03.gif" alt=""><span>中國語</span></a>
+                        </div>
                     </div>
                 </div>
                 <a href="#" class="gnb">
@@ -54,7 +57,118 @@
         </div>
         <a href="#" class="bot"><img src="./images/chatbot.png" alt=""></a>
     </header><!-- e: header -->
-    <div class="nav"></div>
+    <!-- 전체 메뉴 팝업창 -->
+    <div class="nav">
+        <div class="allmenu">
+            <div class="menu_layer">
+                <h1>사이트맵</h1>
+                <div class="tab_serch">
+                    <div class="inner_con">
+                        <form action="" name="serch" method="post">
+                            <input type="text" class="container_text" style="line-height: 40px; width: 400px; height: 40px;" value="     검색어를 입력하세요">
+                            <button type="button" class="submit"><img src="./images/ico_gnb_search.png" alt=""></button> 
+                        </form>
+                    </div>
+                </div>
+                <div class="tab_type01">
+                    <ul class="menu_list">
+                        <li><a href="#">개인뱅킹</a></li>
+                        <li><a href="#">기업뱅킹</a></li>
+                        <li><a href="#">금융상품</a></li>
+                        <li><a href="#">전체서비스</a></li>
+                    </ul>
+                    <div class="content_box">
+                        <ul class="keyword_wrap01 kwarp">
+                            <li><a href="#">조회</a></li>
+                            <li><a href="#">이체</a></li>
+                            <li><a href="#">예금/신탁</a></li>
+                            <li><a href="#">퇴직연금</a></li>
+                            <li><a href="#">ISA</a></li>
+                            <li><a href="#">대출</a></li>
+                            <li><a href="#">웰스타로보B</a></li>
+                            <li><a href="#">펀드</a></li>
+                            <li><a href="#">카드</a></li>
+                            <li><a href="#">외환</a></li>
+                            <li><a href="#">보험</a></li>
+                            <li><a href="#">공과금납부</a></li>
+                            <li><a href="#">전자어음</a></li>
+                            <li><a href="#">뱅킹관리</a></li>
+                            <li><a href="#">공동인증센터</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">금융인증센터</a></li>
+                        </ul>
+                        <ul class="menu_list">
+                            <li>
+                                <dl>
+                                    <dt><a href="#">전체계좌조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">거래내역조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">이체내역조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">특정일전체계좌잔액조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">썸패스가맹점거래조회</a></dt>
+                                    <dd><a href="#">거래내역조회</a></dd>
+                                    <dd><a href="#">매출집계</a></dd>
+                                    <dd><a href="#">기본정보조회</a></dd>
+                                    <dd><a href="#">SMS수신번호관리</a></dd>
+                                    <dd><a href="#">가맹점정보등록(수정)요청</a></dd>
+                                    <dd><a href="#">클래스신청내역조회</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">수표/어음</a></dt>
+                                    <dd><a href="#">당좌/어음</a></dd>
+                                    <dd><a href="#">보관어음조회/관리</a></dd>
+                                    <dd><a href="#">자기앞수표</a></dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">세금우대/비과세한도조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">해지계좌조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">해지계좌거래내역조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">기일도래명세조회</a></dt>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="#">계좌통합관리서비스</a></dt>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="close_menu"><img src="./images/ico_allmenu_close.png" alt=""></button>
+        </div>
+    </div><!-- e:nav -->
     <main>
         <div class="bnr_wrap">
             <div class="bnr_container">
@@ -80,73 +194,89 @@
                             <a href="#">조회</a>
                             <a href="#">이체</a>
                             <a href="#">환율</a>
-                            <button type="button" id="trans">빠른메뉴<img src="#" alt=""></button>
+                            <button type="button" id="trans">빠른메뉴<img src="./images/icon/right-arrow.png" alt=""></button>
                         </div>
                         <div class="active_page">
-                            <button type="button">빠른메뉴<img src="#" alt=""></button>
-                            <a href="#">A</a>
-                            <a href="#">B</a>
-                            <a href="#">C</a>
+                            <div class="active_left">
+                                <p id="left_icon"><img src="./images/icon/left-arrow.png" alt=""></p>
+                                <p><button type="button">빠른메뉴</button></p>
+                            </div>
+                            <div class="quick_link">
+                                <a href="#">A</a>
+                                <a href="#">B</a>
+                                <a href="#">C</a>
+                                <a href="#">d</a>
+                                <a href="#">e</a>
+                                <a href="#">f</a>
+                            </div>
                         </div>
                     </div>
                 </div><!-- e:quick_menu -->
             </div>
-        </div><!-- bnr_wrap -->
+        </div><!-- e:bnr_wrap -->
         <div class="product_wrap">
             <div class="product_container">
+                <h1>금융 상품</h1>
                 <ul class="content">
                     <li class="cont01">
-                        <P class="icon"><img src="#" alt=""></P>
+                        <P class="icon"><img src="./images/icon/icon_set_011.png" alt=""></P>
                         <h2>title</h2>
                         <p class="text">text</p>
                     </li>
                     <li class="cont02">
-                        <P class="icon"><img src="#" alt=""></P>
+                        <P class="icon"><img src="./images/icon/icon_set_011.png" alt=""></P>
                         <h2>title</h2>
                         <p class="text">text</p>
                     </li>
                     <li class="cont03">
-                        <P class="icon"><img src="#" alt=""></P>
+                        <P class="icon"><img src="./images/icon/icon_set_011.png" alt=""></P>
                         <h2>title</h2>
                         <p class="text">text</p>
                     </li>
                     <li class="cont04">
-                        <P class="icon"><img src="#" alt=""></P>
+                        <P class="icon"><img src="./images/icon/icon_set_011.png" alt=""></P>
                         <h2>title</h2>
                         <p class="text">text</p>
                     </li>
                     <li class="cont05">
-                        <P class="icon"><img src="#" alt=""></P>
+                        <P class="icon"><img src="./images/icon/icon_set_011.png" alt=""></P>
                         <h2>title</h2>
                         <p class="text">text</p>
                     </li>
                 </ul>
             </div>
         </div><!-- e:product_wrap -->
-        <div class="event_wrap">
-            <ul class="event_content">
-                <li>
-                    <p class="img"><img src="#" alt="">img</p>
-                    <h2>title01</h2>
-                    <p class="text">text</p>
-                </li>
-                <li>
-                    <p class="img"><img src="#" alt="">img</p>
-                    <h2>title02</h2>
-                    <p class="text">text</p>
-                </li>
-                <li>
-                    <p class="img"><img src="#" alt="">img</p>
-                    <h2>title03</h2>
-                    <p class="text">text</p>
-                </li>
-            </ul>
-            <a href="#">이벤트 더보기</a>
-        </div><!-- e:event_wrap -->
         <div class="service_wrap">
+            <div class="service_bg"></div>
             <div class="service_container">
+                <div class="event_wrap">
+                    <ul class="event_content">
+                        <li>
+                            <p class="event_img img01"></p>
+                            <h2>title01</h2>
+                            <p class="text">text</p>
+                        </li>
+                        <li>
+                            <p class="event_img img01"></p>
+                            <h2>title02</h2>
+                            <p class="text">text</p>
+                        </li>
+                        <li>
+                            <p class="event_img img01"></p>
+                            <h2>title03</h2>
+                            <p class="text">text</p>
+                        </li>
+                    </ul>
+                    <a href="#">진행중 이벤트 더보기</a>
+                </div><!-- e:event_wrap -->
                 <div class="column">
                     <ul class="service_column">
+                        <li>
+                            <a href="#">
+                                <h2>고객우대서비스</h2>
+                                <p><img src="./images/" alt=""></p>
+                            </a>
+                        </li>
                         <li>
                             <a href="#">
                                 <h2>고객우대서비스</h2>
