@@ -130,6 +130,12 @@ header {
                     
                     border-top: 2px solid #cb2b11 !important;
                     display: flex;
+                    .active_red {
+                        background-color: #cb2b11;
+                        
+                        border: 1px solid #cb2b11;
+                        > a {color: #f4f4f4;}
+                    }
                     > li {
                         width: 25%;
                         position: relative;

@@ -182,6 +182,13 @@ header .bot {
   border-top: 2px solid #cb2b11 !important;
   display: flex;
 }
+.nav .allmenu .menu_layer .tab_type01 > .menu_list .active_red {
+  background-color: #cb2b11;
+  border: 1px solid #cb2b11;
+}
+.nav .allmenu .menu_layer .tab_type01 > .menu_list .active_red > a {
+  color: #f4f4f4;
+}
 .nav .allmenu .menu_layer .tab_type01 > .menu_list > li {
   width: 25%;
   position: relative;
