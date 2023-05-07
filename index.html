@@ -9,6 +9,8 @@
     <title>부산은행 | BNK</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/reset.css">
 </head>
@@ -68,20 +70,20 @@
                     <div class="inner_con">
                         <form action="" name="serch" method="post">
                             <input type="text" class="container_text" style="line-height: 40px; width: 400px; height: 40px;" value="     검색어를 입력하세요">
-                            <button type="button" class="submit"><img src="./images/ico_gnb_search.png" alt=""></button> 
+                            <button type="button" class="submit"><img src="./images/icon/ico_gnb_search.png" alt=""></button> 
                         </form>
                     </div>
                 </div>
                 <div class="tab_type01">
                     <ul class="menu_list">
-                        <li class="active_red tabtitle" ><a href="#">개인뱅킹</a></li>
+                        <li class="active_red tabtitle title01" ><a href="#">개인뱅킹</a></li>
                         <li class="tabtitle"><a href="#" >기업뱅킹</a></li>
                         <li class="tabtitle"><a href="#">금융상품</a></li>
                         <li class="tabtitle"><a href="#">전체서비스</a></li>
                     </ul>
                     <div class="content_box">
                         <ul class="keyword_wrap01 kwarp">
-                            <li><a href="#">조회</a></li>
+                            <li><a href="#" class="active_gray keyword01">조회</a></li>
                             <li><a href="#">이체</a></li>
                             <li><a href="#">예금/신탁</a></li>
                             <li><a href="#">퇴직연금</a></li>
@@ -168,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="close_menu"><img src="./images/ico_allmenu_close.png" alt=""></button>
+            <button type="button" class="close_menu"><img src="./images/icon/ico_allmenu_close.png" alt=""></button>
         </div>
     </div><!-- e:nav -->
     <main>
@@ -177,29 +179,33 @@
                 <div class="section">
                     <div class="quick_menu">
                         <div class="quick_bar">
-                            <div class="first_page">
-                                <a href="#">다른금융<br>정보조회</a>
-                                <a href="#">조회</a>
-                                <a href="#">이체</a>
-                                <a href="#">환율</a>
-                                <button type="button" id="trans">빠른메뉴<img src="./images/icon/right-arrow.png" alt=""></button>
-                            </div>
-                            <div class="active_page">
-                                <div class="active_left">
-                                    <p id="left_icon"><img src="./images/icon/left-arrow.png" alt=""></p>
-                                    <p><button type="button">빠른메뉴</button></p>
+                            <div class="view_con">
+                                <div class="first_page">
+                                    <a href="#">다른금융<br>정보조회</a>
+                                    <a href="#"><span>조회</span></a>
+                                    <a href="#"><span>이체</span></a>
+                                    <a href="#"><span>환율</span></a>
+                                    <button type="button" id="trans">빠른메뉴<img src="./images/icon/right-arrow.png" alt=""></button>
                                 </div>
-                                <div class="quick_link">
-                                    <a href="#">A</a>
-                                    <a href="#">B</a>
-                                    <a href="#">C</a>
-                                    <a href="#">d</a>
-                                    <a href="#">e</a>
-                                    <a href="#">f</a>
+                                <div class="active_page">
+                                    <div class="active_left">
+                                        <p id="left_icon"><img src="./images/icon/left-arrow.png" alt=""></p>
+                                        <p id="back"><button type="button">빠른메뉴</button></p>
+                                    </div>
+                                    <div class="quick_link">
+                                        <a href="#" class="quicklink_list">스피드계좌조회</a>
+                                        <a href="#" class="quicklink_list">공과금</a>
+                                        <a href="#" class="quicklink_list">뱅킹관리</a>
+                                        <a href="#" class="quicklink_list">고객광장</a>
+                                        <a href="#" class="quicklink_list">영업점안내</a>
+                                        <a href="#" class="quicklink_list">카드신청</a>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div><!-- e:quick_menu -->
+                    
                     <div class="bnr_slide slide01">
                         <h1>당신의 금융 파트너</h1>
                     </div>
@@ -404,15 +410,50 @@
                     <a href="#">전자금융사기피해금환급제도</a>
                     <a href="#">위치정보수집 이용약관</a>
                     <a href="#">위치기반서비스 이용약관</a>
-                </div>
+                </div><!-- e:fnb -->
                 <div class="copyright">
                     <p>COPYTRIGHT ⓒ 2014 BUSANBANK. ALL RIGHTS RESERVED.<br></p>
                     <p><img src="./images/wa_mark.png" alt=""><img src="./images/bnklogo.png" alt=""></p>
                 </div>
                 <div class="link">
-                    <a href="#">bnk network</a>
-                    <a href="#">bnk sns</a>
-                    <a href="#">family site</a>
+                    <div class="flink_title">
+                        <div class="title_sns flink">
+                            <h3>bnk sns</h3>
+                            <ul class="con_sns conlink">
+                                <li><a href="#"><img src="" alt="">A</a></li>
+                                <li><a href="#"><img src="" alt="">B</a></li>
+                                <li><a href="#"><img src="" alt="">C</a></li>
+                                <li><a href="#"><img src="" alt="">C</a></li>
+                                <li><a href="#"><img src="" alt="">C</a></li>
+                                <li><a href="#"><img src="" alt="">C</a></li>
+                                <li><a href="#"><img src="" alt="">C</a></li>
+                            </ul>
+                        </div>
+                        <div class="title_network flink">
+                            <h3>bnk network</h3>
+                            <ul class="con_network conlink">
+                                <li><a href="#">BNK금융지주</a></li>
+                                <li><a href="#">경남은행</a></li>
+                                <li><a href="#">BNK캐피탈</a></li>
+                                <li><a href="#">BNK투자증권</a></li>
+                                <li><a href="#">BNK저축은행</a></li>
+                                <li><a href="#">BNK자산운용</a></li>
+                                <li><a href="#">BNK신용정보</a></li>
+                                <li><a href="#">BNK시스템</a></li>
+                            </ul>
+                        </div>
+                        <div class="title_family flink">
+                            <h3>family site</h3>
+                            <ul class="con_family conlink">
+                                <li><a href="#">부은동우회</a></li>
+                                <li><a href="#">BNK부산은행조은극장</a></li>
+                                <li><a href="#">BNK부산은행갤러리</a></li>
+                                <li><a href="#">부산은행금융역사관</a></li>
+                                <li><a href="#">행복한 BNK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="f_right">
