@@ -1,3 +1,15 @@
+//헤더 보더 이벤트
+$(window).scroll(function(){
+    $('header').css('border-bottom','2px solid #cb2b11')
+})
+//최상단에 올라오면 보더값 리셋
+$(window).scroll(function() {
+    if ($(this).scrollTop() == 0) {
+        $('header').css('border','0')
+    }
+})
+
+
 //로그인 서브메뉴 on/off event
 $('.login').on('mouseover', ()=>{
     $('.login > p').show()
@@ -25,6 +37,7 @@ $('.lang').on('mouseout', ()=>{
 //전체 메뉴 on/off event
 let i = true;
 $('.gnb').on('click',()=>{
+    
     if (i == true){
         $('.nav').stop(true).slideDown()
         i = false
@@ -44,6 +57,11 @@ $('.gnb').on('click',()=>{
 })
 $('.close_menu').on('click',()=>{
     $('.nav').stop(true).slideUp()
+})
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+        $('.nav').stop(true).slideUp()
+    }
 })
 
 //전체메뉴 list tab active event
@@ -70,7 +88,12 @@ $('.active_left').on('click',()=>{
     $('.view_con').css('transform','translateX(0px)')
     $('.view_con').css('transition','all 0.5s')
 })
-
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 700) {
+        $('.view_con').css('transform','translateX(0px)')
+        $('.view_con').css('transition','all 0.5s')
+    }
+})
 //footer link 마우스 오버 이벤트
 $('.flink > h3').on('mouseover',function(){
     for(let i of $('.flink > h3')){
@@ -88,3 +111,36 @@ $('.title_sns').on('mouseout', ()=>{
 })
 
 //--------------
+const swiper1 = new Swiper('.swiper',{
+    //방향설정 direction:'horizontal','vertical'
+    /* direction:'horizontal', */
+    effect:'fade',
+    autoplay:{delay:4000},
+    speed:1000,
+    loop:true 
+})
+
+//link 업다운 이벤트
+let j = true
+$('.title_network > p > button').on('click',function(){
+    console.log('.')
+    if (j == true) {
+        $('.con_network').stop(true).slideDown()
+        j = false
+    }
+    else {
+        $('.con_network').stop(true).slideUp()
+        j = true
+    }
+})
+$('.title_family > p > button').on('click',function(){
+    console.log('.')
+    if (j == true) {
+        $('.con_family').stop(true).slideDown()
+        j = false
+    }
+    else {
+        $('.con_family').stop(true).slideUp()
+        j = true
+    }
+})

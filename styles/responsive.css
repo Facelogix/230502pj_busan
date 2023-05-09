@@ -1,0 +1,4 @@
+/* 최대 1400px */
+@media (max-width:1400px){
+    header,main,footer {width:calc(100% - 30px);}
+}
