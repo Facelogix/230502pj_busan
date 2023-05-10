@@ -1,4 +1,128 @@
-/* 최대 1400px */
-@media (max-width:1400px){
-    header,main,footer {width:calc(100% - 30px);}
+*{box-sizing:border-box;}
+/* 최대 1250px */
+@media (max-width:1250px){
+    body > *, .nav, main, footer {
+        margin: 0 auto!important;
+        padding:0 calc((100% - 1200px) / 2);
+        width: calc(100% - 30px);
+    }
+    
+    header .h_container {width: 100%;}
+    header .h_container .h_right .gnb .menu_icon {display: block;}
+    header .h_container .h_right .gnb a:first-child {display: none;}
+    header .h_container .h_right .gnb {justify-content: space-around;}
+    main .product_wrap .product_container {width: 100%;}
+    main .product_wrap .product_container h1 {margin-left: 50px;}
+    .product_wrap .product_container .content .cont05 {display: none;}
+    .product_wrap .product_container .content >li {width: 25%;}
+    /* event_wrap */
+    main .service_wrap {
+        
+        margin: 0 auto;
+    }
+    main .service_wrap .service_container {
+        width: 100%;  
+    }
+    
+    main .service_wrap .service_container .event_wrap {
+        width: 100%; margin: 0 auto; position:relative; left: 50%; transform: translateX(-50%);
+    }
+    main .service_wrap .service_container .event_wrap .event_content{
+        width: 100%; 
+    }
+    main .service_wrap .service_container .event_wrap a{
+        width: 100%; 
+    }
+
+    main .service_wrap .service_container .right_bg {display: none;}
+    main .service_wrap .service_container .test .column .service_column {
+        flex-flow: row; justify-content: space-between;
+    }
+    main .service_wrap .service_container .test .column .service_column li a {
+        padding: 10px 0;
+    }
+    main .service_wrap .service_container .test .column .service_column li > a > p{ padding: 10px;}
+    .f_right {display: none;}
+    footer > .f_container {width: 100%; justify-content: space-around; padding: 25px 20px;}
+    footer .f_container .f_left .copyright p img:last-child {display: inline-flex;}
+}
+@media (max-width:1024px){
+    header .h_container .h_right .right_util {display: none;}
+    header {height: 100px; top: 0;}
+    header .h_container h1 {margin-bottom: 30px;}
+    header .h_container .user_menu {margin-bottom: 30px;}
+    main .bnr_wrap {height: 500px;}
+    main .bnr_wrap .bnr_container {height: 100%;}
+    main .bnr_wrap .bnr_container .swiper {height: 100%;}
+    main .bnr_wrap .bnr_container .swiper .swiper-wrapper {height: 100%;}
+    main .bnr_wrap .bnr_container .swiper .swiper-wrapper .swiper-slide {
+        height: 100%;
+        background-position: center;
+    }
+    main .bnr_wrap .bnr_container .swiper .swiper-wrapper .swiper-slide h1 {
+        font-size: 2rem ; line-height: 500px;
+    }
+    main .bnr_wrap .bnr_container .section .quick_menu {width: 580px;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con {
+        
+    }
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page {width: 580px;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .active_page {width: 580px;}
+    main .service_wrap .service_container .test .column .service_column li > a {
+        margin-top: 30px;
+    }
+    main .service_wrap .service_container .test .column .service_column li:last-child > a {
+        margin-top: 10px;
+    }
+    main .service_wrap .service_container .test .column .service_column li > a .left  { padding: 10px;}
+    main .service_wrap .service_container .test .column .service_column li > a .left > p { display: none;}
+
+}
+@media (max-width:880px){
+    
+    header .h_container .user_menu a {font-size: 0.9rem;}
+    .nav .allmenu .menu_layer .tab_serch {display: none;}
+    main .bnr_wrap {height: 350px;}
+    main .bnr_wrap .bnr_container .swiper .swiper-wrapper .swiper-slide h1 {
+        font-size: 2rem ; line-height: 350px;
+    }
+    main .bnr_wrap .bnr_container .section .quick_menu {width: 550px; height: 60px;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar {height: 100%;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con {height: 100%;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page {width: 550px; height: 100%;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page a:first-child{display: none;}
+
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page a  {width: 27%; padding: 0;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page a span {line-height: 60px; font-size: 1rem;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page #trans {line-height: 60px; font-size: 1rem;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .first_page #trans img{display: inline-block; width: 20%;}
+    main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .active_page {width: 550px;}
+    .product_wrap .product_container .content .cont04 {display: none;}
+    .product_wrap .product_container .content li {width: 33%;}
+    main .service_wrap .service_container .test .column .service_column li  {
+        height: 150px;
+    }
+    main .service_wrap .service_container .test .column .service_column li > a .left > h2 { font-size: 1rem; line-height: 1;}
+    main .service_wrap .service_container .test .row .service_row li {
+        height: 50px; padding: 10px 20px;
+    }
+    main .service_wrap .service_container .test .row .service_row li div
+    {display: none;}
+    main .service_wrap .service_container .test .row .service_row li div > *
+    {display: none;}
+    footer .f_container {display: block;}
+    footer .f_container .f_left {width: 100%;}
+}
+@media (max-width:600px){
+    main .bnr_wrap {height: 200px;}
+    main .bnr_wrap .bnr_container .swiper .swiper-wrapper .swiper-slide h1 {
+        font-size: 1.5rem ; line-height: 200px;
+    }
+    main .service_wrap .service_container .test .row .service_row li a h2 {font-size: 0.8rem; padding: 5px 15px;}
+    main .service_wrap .service_container .test .row .service_row li a h2 img{display: none;}
+    main .service_wrap .service_container .test .column {
+        display: none;
+    }
+    main .service_wrap {padding-bottom: 10px;}
+    
 }

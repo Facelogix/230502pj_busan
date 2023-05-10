@@ -81,7 +81,7 @@ $('.keyword_wrap01 > li > a').on('click', function(){
 })
 //빠른메뉴 클릭시 메뉴 변경 이벤트
 $('#trans').on('click',()=>{
-    $('.view_con').css('transform','translateX(-864px)')
+    $('.view_con').css('transform','translateX(-50%)')
     $('.view_con').css('transition','all 0.5s')
 })
 $('.active_left').on('click',()=>{
