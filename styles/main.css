@@ -511,20 +511,24 @@ main .bnr_wrap .bnr_container .section .quick_menu .quick_bar .view_con .active_
   color: #cb2b11;
   text-decoration: underline;
 }
+main .bnr_wrap .bnr_container .swiper .swiper-slide-active {
+  animation: slideSize01 4s linear;
+}
+main .bnr_wrap .bnr_container .swiper .swiper-slide-active h1 {
+  animation: slideText01 4s linear;
+}
 main .bnr_wrap .bnr_container .swiper .swiper-slide {
   text-align: center;
   width: 1920px;
   height: 700px;
   display: block;
   /* display: none; */
-  animation: slideSize01 4s linear;
 }
 main .bnr_wrap .bnr_container .swiper .swiper-slide h1 {
   font-size: 3rem;
   color: #f4f4f4;
   line-height: 700px;
   font-weight: 600;
-  animation: slideText01 4s linear;
 }
 main .bnr_wrap .bnr_container .swiper .slide1 {
   background: url(../images/bnr001.jpg) center;
